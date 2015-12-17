@@ -1,11 +1,21 @@
 body{
-  background-image: url("http://img1.goodfon.su/original/1920x1200/c/e3/paint-acrylic-colors-texture-3439.jpg");
+  overflow-x: hidden;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;*/
+  background-image: url("img/main/bgmore.png");
 }
+
+
+
+
+
+
 
 #header{
   font-family: 'Raleway', sans-serif;
   padding-left: 30px;
   padding-top: 10px;
+  padding-bottom: 20px;
   height: 100px;
   color: #004C4C;
  /*   background: -webkit-linear-gradient(#004C4C, #33ADAD); /* For Safari 5.1 to 6.0 
@@ -16,6 +26,7 @@ body{
 
 #logo{
   float: left;
+  width: 270px;
 }
 
 .menu{
@@ -28,6 +39,10 @@ body{
   margin-left: 620px;
   width: 1000px;
   padding-top: 10px;
+}
+
+#menu-options a{
+    color: black;
 }
 
 
@@ -46,28 +61,57 @@ body{
 
 
 
-#main{
+.main{
   font-family: 'Muli', sans-serif;
   color: white;
-  font-size: 150px;
+  font-size: 100px;
   line-height: 95%;
-  padding: 20px;
+  padding: 60px;
 }
 
+
 #about-section{
- background-color:rgba(255,255,255,0.3);
+ /*background-color:rgba(255,255,255,0.3);*/
   border-radius: 13px;
-  padding: 50px;
+  padding: 20px;
   margin: 50px;
   font-family: 'Muli', sans-serif;
   font-size: 20px;
 }
 
+#about-detail{
+  padding-top: 20px;
+  font-size: 16px;
+  width: 600px;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+#about-detail h4{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+#about-detail h5{
+  font-family: 'Cambay';
+  font-style: italic;
+  font-size: 18px;
+}
+
+#about-detail p{
+  padding-bottom: 10px;
+}
+
 .quote{
-  font-family: "Amatic SC", "Muli", sans-serif;
-  font-size: 110px;
+  font-family:  'Amatic SC', 'Muli', sans-serif;
+  font-size: 120px;
+  color: white;
   line-height: 95%;
-  font-weight: bold;
+}
+
+#andy{
+  font-size: 15px;
 }
 
 #about{
@@ -77,12 +121,39 @@ body{
 
 #calendar{
   width: 800px;
-  padding-top: 50px;
+/*  padding-top: 50px;*/
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
 }
+
+
+
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  color: white;
+  padding-bottom: 50px;
+
+}
+
+.project-grid{
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom: 30px;
+}
+
+a.fancybox img {
+  border: none;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+  -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+} 
+a.fancybox:hover img {
+  position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+}
+
 
 
 
