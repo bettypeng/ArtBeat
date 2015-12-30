@@ -33,6 +33,6 @@ $(document).ready(function() {
             $("#projects").load(url); 
      //    } 
      //   }); 
-     });
+     });(jQuery);
 
 });
