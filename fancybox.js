@@ -1,7 +1,5 @@
 $(document).ready(function() { 
 
-    
-    
     $(function($){
         var addToAll = false;
         var gallery = false;
@@ -21,16 +19,25 @@ $(document).ready(function() {
     });(jQuery);
 
     // $.noConflict();
+    $("#spring15").hide();
 
     $(".season").click(function(e){ 
-        console.log("HI");
+        // console.log("HI");
         e.preventDefault();
         var url = $(this).attr('href'); //get the link you want to load data from
         // $.ajax({ 
         //  type: 'GET',
         //  url: url,
         //  success: function(data) { 
-            $("#projects").load(url); 
+        if(url ==="spring15"){
+            $("#fall15").fadeOut(1000);
+            $("#spring15").fadeIn(2000);
+        }
+        else if(url ==="fall15"){
+            $("#spring15").fadeOut(1000);
+            $("#fall15").fadeIn(2000);
+        }
+            // $("#projects").load(url); 
      //    } 
      //   }); 
      });(jQuery);
