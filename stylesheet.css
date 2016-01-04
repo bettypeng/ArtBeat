@@ -1,46 +1,86 @@
 body{
   overflow-x: hidden;
-  background-attachment: fixed;
+  
   /*background-repeat: no-repeat;*/
-  background-image: url("img/main/bgmore.png");
+/*  background-image: url("img/main/bgwhite.png");
+*/}
+
+.container-fluid{
+   margin: 0px;
+  padding:0px;
+}
+
+#main-section{
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-image: url("img/main/splatter.png");
+  padding-bottom: 80px;
+}
+
+
+#about-section{
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-image: url("img/main/pink.jpg");
+ background-color:#ffffff;
+}
+
+
+#projects-section{
+  padding-top: 40px;
+  padding-bottom: 80px;
+background-color: #33CCCC;
+  background-image: url("img/main/watercolor.jpg");
+}
+
+#artists-section{
+  padding-top: 40px;
+  padding-bottom: 170px;
+  background-image: url("img/main/splotches.png");
+
+}
+
+#contact-section{
+    background-image: url("img/main/sunrising.png");
+
+  /*background: -webkit-linear-gradient(  #ffd699, #FFFFFF); For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(  #ffd699, #FFFFFF); For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#ffd699, #FFFFFF);  For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#ffd699, #FFFFFF);  Standard syntax */
+  padding-top: 50px;
+
 }
 
 
 
 #header{
   font-family: 'Raleway', sans-serif;
-  padding-left: 30px;
   padding-top: 10px;
-  padding-bottom: 20px;
-  height: 100px;
+  padding-bottom: 10px;
   color: #004C4C;
- /*   background: -webkit-linear-gradient(#004C4C, #33ADAD); /* For Safari 5.1 to 6.0 
-  background: -o-linear-gradient(#004C4C, #33ADAD); /* For Opera 11.1 to 12.0 
-  background: -moz-linear-gradient(#004C4C, #33ADAD); /* For Firefox 3.6 to 15 
-  background: linear-gradient(#004C4C, #33ADAD); /* Standard syntax */
+}
+ 
+
+#menu-wrap{
+  padding-bottom: 20px;
 }
 
-#logo{
-  float: left;
-  width: 270px;
-}
-
-.menu{
-  display: inline-block;
-  padding-left: 35px;
+.menu h1{
+/*  display: inline-block;
+  padding-left: 35px;*/
   font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 30px;
 }
 
-#menu-options{
+/*#menu-options{*/
   /*margin-left: 620px;*/
   /*width: 1000px;*/
-  padding-top: 10px;
-  padding-right: 40px;
-}
+/*  padding-top: 10px;
+  padding-right: 40px;*/
+/*}*/
 
-#menu-options a{
-    color: black;
-}
 
 
 /*
@@ -58,101 +98,59 @@ body{
 
 
 #video{
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
-#main{
+#about-section h1{
   font-family: 'Muli', sans-serif;
-  color: white;
-  font-size: 100px;
+  font-size:60px;
+  font-size: 8vw;
   line-height: 95%;
 }
 
-
-#about-section{
- /*background-color:rgba(255,255,255,0.3);*/
-  border-radius: 13px;
-  padding: 20px;
-  margin: 50px;
-  font-family: 'Muli', sans-serif;
-  font-size: 20px;
+#about-section h3{
+  font-family: 'Raleway', sans-serif;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 #about-detail{
-  padding-top: 20px;
-  font-size: 16px;
-  width: 600px;
-  margin-right: auto;
-  margin-left:auto;
+  padding-top: 20px;  /*width: 600px;*/
+ /* margin-right: auto;
+  margin-left:auto;*/
 }
 
 #about-detail h4{
-  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-}
-
-#about-detail h5{
-  font-family: 'Cambay';
-  font-style: italic;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #about-detail p{
+  font-family: 'Cambay', sans-serif;
+  font-size: 18px;
   padding-bottom: 10px;
 }
 
-.quote{
-  font-family:  'Amatic SC', 'Muli', sans-serif;
-  font-size: 100px;
 
-  color: white;
-  line-height: 95%;
-  padding-top: 30px;
-}
-
-#andy{
-  font-size: 15px;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-
-#about{
-  padding-top: 30px;
-  font-size: 25px;
-}
-
-#calendar{
-  width: 800px;
+/*#calendar{
+ /* width: 800px;*/
 /*  padding-top: 50px;*/
-  padding-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 30px;
-}
-
-
-#projects-section{
-  padding-top: 40px;
-  padding-bottom: 100px;
-}
-
-
-
-
-
+  /*padding-bottom: 50px;*/
+/*  margin-left: auto;
+  margin-right: auto;*/
+/*  border-radius: 30px;
+}*/
 
 
 
 h2{
   font-family: 'Raleway', sans-serif;
   font-size: 70px;
-  color: white;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 
 }
 
@@ -163,6 +161,12 @@ h3{
   padding: 20px;
 }
 
+
+
+
+
+
+
 .options a{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -171,14 +175,16 @@ h3{
   /*padding-bottom: 25px;*/
 }
 
-.project-grid{
+/*.project-grid{
   padding-top: 25px;
   padding-left:50px;
   padding-right:50px;
   padding-bottom: 30px;
-}
+}*/
+
 
 .fancymain{
+  margin-top: 20px;
   width: 250px;
   border-style: solid;
   border-color: white;
@@ -187,6 +193,7 @@ h3{
 }
 
 a.fancybox img {
+  margin-top: 20px;
   border-style: solid;
   border-color: white;
   border-width: 10px;
@@ -197,7 +204,7 @@ a.fancybox img {
   position: relative; */
 
 
-a.fancybox{ position: relative; display: inline-block }
+/*a.fancybox{ position: relative; display: inline-block }*/
 
 a.fancybox img {
     width:250px;
@@ -205,11 +212,12 @@ a.fancybox img {
 
 a.fancybox h3 {
     position: absolute;
+    width: 250px;
+    height: 250px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0;
     background: white;
     color: black;
     opacity:0;
@@ -227,17 +235,9 @@ a.fancybox:hover h3 {
 
 
 
-#contact-section{
-  border-radius: 13px;
-  margin: 50px;
-  font-family: 'Muli', sans-serif;
+#contact-section p{
+    font-family: 'Muli', sans-serif;
   font-size: 20px;
-}
-
-#contact-text{
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #iconsbar{
@@ -245,24 +245,22 @@ a.fancybox:hover h3 {
 }
 
 .icon{
-  width: 70px;
+  width: 50px;
   margin: 20px;
-    box-shadow: 0 1px 7px rgba(0,0,0,0.6);
-
-  border-width: 0.5px;
-  border-color: white;
-  border-style: solid;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+  border-width: 0px;
   border-radius: 50%;
 }
 
 .banner{
   width: 400px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-
+/*
 #myCarousel{
   margin-left: auto;
   margin-right: auto;
@@ -312,4 +310,4 @@ a.fancybox:hover h3 {
 
 .item{
   padding-bottom: 100px;
-}
+}*/
