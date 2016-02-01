@@ -1,16 +1,19 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 
 <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel = "stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Raleway:600,400|Cambay:400,400italic|Muli|Amatic SC:bold' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<link href="http://vjs.zencdn.net/5.5.3/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+
 <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 
 <link rel="icon" 
       type="image/png" 
       href="img/main/favicon.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 
 </head>
@@ -20,8 +23,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="fancybox.js"></script>
+<!-- <script type="text/javascript" src="main.js"></script>
+ --><script type="text/javascript" src="fancybox.js"></script>
 
 <div class="container-fluid">
     <div id = "main-section">
@@ -51,10 +54,20 @@
 
         <div class = "row">
             <div id = "video" class = "text-center col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
-                <video class = "img-responsive" autoplay>
-                    <source src="artbeat_final.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                
+
+                 <video id="my-video" class="video-js" controls preload="auto"
+                  poster="img/main/videoshot2.png" data-setup="{}">
+                    <source src="artbeat_final.mp4"  type='video/mp4'>
+                    <!-- <source src="MY_VIDEO.webm" type='video/webm'> -->
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a web browser that
+                      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                  </video>
+
+                  <script src="http://vjs.zencdn.net/5.5.3/video.js"></script>
+
             </div>
         </div>
     </div>
@@ -303,25 +316,33 @@
     <a name = "artists-section"></a>
     <div id = "artists-section">
         <h2 class = "text-center">ARTISTS OF BROWN</h2>
-        <div class = "row">
+        <div class = "row text-center">
             <div class = "col-md-3 col-sm-4">
                 <a class="fancybox" href="img/artistsofbrown/1.jpg" rel="artists"  title="'While here at Brown I was able to get into theater again. Everyone was so welcoming, and people who do theater always talk about *the bug*. But that's an awesome, awesome way to show a side of yourself that's totally hidden and embedded or express a part that you want to show more.'">
                     <img class = "img-responsive center-block" src="img/artistsofbrown/thumb1.jpg" alt=""/>
+                    <h5 id = "artist-name">John Filmanowicz</h5>
+                    <h5 id = "artist-school">Brown 2017</h5>
                 </a>
             </div>
             <div class = "col-md-3 col-sm-4">
                 <a class="fancybox" href="img/artistsofbrown/2.jpg" rel="artists"  title="'After I retire as an engineer, I'm going to move to Norway, or somewhere in Europe, and just make shoes. I think it'll be fun.'">
                     <img class = "img-responsive center-block" src="img/artistsofbrown/thumb2.jpg" alt=""/>
+                    <h5 id = "artist-name">Kenta Kondo</h5>
+                    <h5 id = "artist-school">Brown 2017</h5>
                 </a>
             </div>
             <div class = "col-md-3 col-sm-4">
                 <a class="fancybox" href="img/artistsofbrown/3.jpg" rel="artists"  title="'I'm a sophomore painting major at RISD, and even though ostensibly we're in the department of painting, the idea behind the painting major is that it's the umbrella major of fine arts. Right now I'm working on a piece for drawing class right now and I'm making these male-nudes earrings. So much of female representation has been problematic, like the female nude where the female is very passive. Their body is for people look at without them confronting it. I was interested in reversing the roles - what does it mean to translate the male figure into decorative, ditzy earrings and necklaces? What is the line where you're being assertive and what is the line where you're exploiting yourself?'">
                     <img class = "img-responsive center-block" src="img/artistsofbrown/thumb3.jpg" alt=""/>
+                    <h5 id = "artist-name">Amelia Zhang</h5>
+                    <h5 id = "artist-school">RISD 2017</h5>
                 </a>
             </div>
             <div class = "col-md-3 col-sm-4">
                 <a class="fancybox" href="img/artistsofbrown/4.jpg" rel="artists"  title="'Someone I worked with said it perfectly once - 'a disability is made by the environment, and not by me.' I really see engineering and design as a way to bridge the gap between communication and various mobility capabilities. My second concentration here is Global Health Narratives, and my focus revolves around a few questions: how do we listen to individual stories, put them into a format, and use them to try to impact the greater systems? For health, what is your individual journey with this illness? I design digital narrative installations which allow the person who is walking through to actually interact with the physical interface.'">
                     <img class = "img-responsive center-block" src="img/artistsofbrown/thumb4.jpg" alt=""/>
+                    <h5 id = "artist-name">Miranda Olson</h5>
+                    <h5 id = "artist-school">Brown 2017</h5>
                 </a>
             </div>
         </div>
@@ -331,25 +352,26 @@
 
     <a name = "contact-section"></a>
     <div id = "contact-section" class = "text-center">
-        <h2>CONTACT</h2>
+<!--         <h2>CONTACT</h2>
         <div class = "row">
             <div class = "col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 ">
                 <p> To stay up-to-date with what we're doing and cool art-related events around College Hill and in Providence, sign up for our mailing list <a href = "https://docs.google.com/a/brown.edu/forms/d/1sSt9vm5Z5smDUtCSHe-muvCezdh6qjTVJW_hXbWJtdA/viewform"> HERE</a>!</p>
                 <p> To contact us about questions, collaborations, events, workshops, cool art exhibitions, etc., send an email to anartbeataway@gmail.com. We'll respond as soon as possible! </p>
             </div>
-        </div>
-
-        <div id = "iconsbar">
-            <a href = "https://www.instagram.com/anartbeataway/"><img class = "icon" src = "img/icons/ig.png"></a>
-            <a href = "https://www.facebook.com/Artbeat-715690511857894/"><img class = "icon" src = "img/icons/fb.png"></a>
-            <a href = "https://twitter.com/anartbeataway"><img class = "icon" src = "img/icons/twitter.png"></a>
-        </div>
-        <div class = "banner">
-            <img class = "img-responsive" src = "img/main/banner.png">
+        </div> -->
+    <div class = "banner">
+        <img class = "img-responsive" src = "img/main/banner.png">
     </div>
 
-
+    <div id = "iconsbar">
+        <a href = "https://www.instagram.com/anartbeataway/"><img class = "icon" src = "img/icons/ig.png"></a>
+        <a href = "https://www.facebook.com/Artbeat-715690511857894/"><img class = "icon" src = "img/icons/fb.png"></a>
+        <a href = "https://twitter.com/anartbeataway"><img class = "icon" src = "img/icons/twitter.png"></a>
     </div>
+    
+
+
+</div>
 
 
 

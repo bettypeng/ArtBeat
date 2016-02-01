@@ -13,15 +13,18 @@ body{
 #main-section{
   padding-top: 10px;
   background-repeat: no-repeat;
-  background-image: url("img/main/splatter.png");
+  /*background-image: url("img/main/splatter.png");*/
+  background-color: white;
   padding-bottom: 80px;
+  background-color: #0099cc;
 }
 
 
 #about-section{
   padding-top: 40px;
   padding-bottom: 80px;
-  background-image: url("img/main/pink.jpg");
+  /*background-image: url("img/main/pink.jpg");*/
+  
  background-color:#ffffff;
 }
 
@@ -29,19 +32,21 @@ body{
 #projects-section{
   padding-top: 40px;
   padding-bottom: 80px;
-background-color: #33CCCC;
-  background-image: url("img/main/watercolor.jpg");
+  background-color: #0099cc;
+  /*background-image: url("img/main/triangles.jpg");*/
 }
 
 #artists-section{
   padding-top: 40px;
   padding-bottom: 170px;
-  background-image: url("img/main/splotches.png");
+  /*background-image: url("img/main/splotches.png");*/
+  background-color: #fff;
 
 }
 
 #contact-section{
-    background-image: url("img/main/sunrising.png");
+    /*background-image: url("img/main/sunrising.png");*/
+    background-color: #0099cc;
 
   /*background: -webkit-linear-gradient(  #ffd699, #FFFFFF); For Safari 5.1 to 6.0 */
   /*background: -o-linear-gradient(  #ffd699, #FFFFFF); For Opera 11.1 to 12.0 */
@@ -100,6 +105,27 @@ background-color: #33CCCC;
 #video{
   padding-top: 20px;
   padding-bottom: 50px;
+  display: flex;
+}
+
+#my-video {
+  display: flex;
+  height: 600px;
+}
+
+@media all and (max-width: 800px) {
+
+  #my-video {
+    display: flex;
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #my-video {
+    display: flex;
+    height: 300px;
+  }
 }
 
 #about-section h1{
@@ -231,9 +257,23 @@ a.fancybox:hover h3 {
 }
 
 
+#artists-section h5{
+  color: black;
+  font-family:"Raleway";
+  font-size: 18px;
+}
 
+#artists-section #artist-school{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 15px;
+}
 
-
+#artists-section #artist-school{
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 9px;
+}
 
 #contact-section p{
     font-family: 'Muli', sans-serif;
@@ -246,18 +286,18 @@ a.fancybox:hover h3 {
 
 .icon{
   width: 50px;
-  margin: 20px;
-  box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.6);
   border-width: 0px;
   border-radius: 50%;
 }
 
 .banner{
-  width: 400px;
-  margin-top: 20px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 /*
