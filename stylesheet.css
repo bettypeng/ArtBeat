@@ -130,10 +130,25 @@ body{
 
 #about-section h1{
   font-family: 'Muli', sans-serif;
-  font-size:60px;
-  font-size: 8vw;
+  font-size:55px;
   line-height: 95%;
 }
+
+
+
+@media all and (max-width: 800px) {
+
+  #about-section h1{
+    font-size:55px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #about-section h1{
+    font-size:40px;
+  }
+}
+
 
 #about-section h3{
   font-family: 'Raleway', sans-serif;
@@ -179,6 +194,20 @@ h2{
   padding-top: 10px;
 
 }
+
+@media all and (max-width: 800px) {
+
+  h2{
+    font-size:55px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h2{
+    font-size:40px;
+  }
+}
+
 
 h3{
   font-family: 'Raleway', sans-serif;
