@@ -110,6 +110,7 @@ body{
 
 #my-video {
   display: flex;
+  background-color: transparent;
   height: 600px;
 }
 
@@ -127,6 +128,11 @@ body{
     height: 300px;
   }
 }
+
+.vjs-default-skin .vjs-big-play-button {
+  left: 45%;
+    top: 50%;
+  }
 
 #about-section h1{
   font-family: 'Muli', sans-serif;
